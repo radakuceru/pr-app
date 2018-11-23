@@ -9,6 +9,7 @@ var config = {
   };
   firebase.initializeApp(config);
 
+// Making instance of datebase
 var database = firebase.database();
 
 // Reading Firebase 
