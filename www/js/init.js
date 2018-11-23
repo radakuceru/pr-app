@@ -9,6 +9,8 @@ var config = {
   };
   firebase.initializeApp(config);
 
+var database = firebase.database();
+
 // Reading Firebase 
 function writeUserData(userId, name, email, imageUrl) {
   firebase.database().ref('users/' + userId).set({
