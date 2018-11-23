@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "cz.parkeli.app"
+        }
+    }
+}
