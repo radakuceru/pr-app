@@ -17,6 +17,10 @@
  * under the License.
  */
 var app = {
+
+	// Default roation of the app
+	rotation: 'landscape',
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -27,6 +31,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+		document.addEventListener('devicerotated', this.onDeviceRotated, false);
     },
     // deviceready Event Handler
     //
@@ -35,6 +40,12 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
+
+	onDeviceRotated: function (event) {
+		app.receiveEvent('devicerotated', event);
+		this.rotation = event.data.rotation;
+	},
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
