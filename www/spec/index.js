@@ -33,6 +33,18 @@ describe('app', function() {
                 expect(app.onDeviceReady).toHaveBeenCalled();
             });
         });
+
+		it('should bind devicerotated', function () {
+            runs(function() {
+                spyOn(app, 'onDeviceRotated');
+                app.initialize();
+                helper.trigger(window.document, 'devicerotated');
+            });
+
+            runs(function() {
+                expect(app.onDeviceRotate).toHaveBeenCalled();
+            });
+		});
     });
 
     describe('onDeviceReady', function() {
@@ -40,6 +52,14 @@ describe('app', function() {
             spyOn(app, 'receivedEvent');
             app.onDeviceReady();
             expect(app.receivedEvent).toHaveBeenCalledWith('deviceready');
+        });
+    });
+
+    describe('onDeviceRotated', function() {
+        it('should report that it fired', function() {
+            spyOn(app, 'receivedEvent');
+            app.onDeviceRotated();
+            expect(app.receivedEvent).toHaveBeenCalledWith('devicerotated');
         });
     });
 

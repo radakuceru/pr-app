@@ -29,5 +29,9 @@ var helper = {
     getComputedStyle: function(querySelector, property) {
         var element = document.querySelector(querySelector);
         return window.getComputedStyle(element).getPropertyValue(property);
-    }
+    },
+	applyStyleForRotation: function (querySelector, rotation) {
+        var element = document.querySelector(querySelector);
+        return window.getRotation(element).setPropertyValue('rotation', rotation);
+	}
 };
